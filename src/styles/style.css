@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.animation-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+section.animation-wrapper section.animation {
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.animation-wrapper section.animation .hero {
+  width: 100%;
+  height: 0;
+}
+section.animation-wrapper section.animation .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.animation-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(211, 7, 24), rgb(24, 27, 205), rgb(187, 205, 24), rgb(216, 19, 124));
+  z-index: -1;
+}
+
+div.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div.home h1 {
+  color: white;
+  margin: 1rem;
+}
+div.home div.scaleinput {
+  color: white;
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div.home div.scaleinput div.btn-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+div.home div.scaleinput div.btn-area button {
+  justify-content: center;
+  font-weight: 600;
+  display: flex;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 6%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10%;
+  background-color: rgb(223, 221, 80);
+  color: rgb(195, 31, 189);
+  transition: all 0.5s ease;
+}
+div.home div.scaleinput div.btn-area button:hover {
+  background-color: rgb(170, 143, 21);
+  color: rgb(68, 9, 42);
+}
+div.home div.result {
+  width: 230px;
+  height: 230px;
+  margin: 1rem;
+  border: 3px solid red;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: border_color;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+}
+div.home div.result p {
+  margin-top: 15px;
+}
+div.home div.result h2#result-freq {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+@keyframes border_color {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  41% {
+    border-color: limegreen;
+  }
+  55% {
+    border-color: blue;
+  }
+  70% {
+    border-color: indigo;
+  }
+  84% {
+    border-color: purple;
+  }
+}/*# sourceMappingURL=style.css.map */
