@@ -10,3 +10,5 @@ Currently, two official plugins are available:
 npm install gsap @gsap/react  
 npm install react-router-dom react-dom react  
 npm install gh-pages
+## To-Do
+route broblem that can't render homepage & about on preview(localhost can display), fix it
