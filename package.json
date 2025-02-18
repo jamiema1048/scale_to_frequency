@@ -1,20 +1,24 @@
 {
-  "name": "react_project",
+  "name": "scale_to_frequency",
+  "homepage": "https://jamiema1048.github.io/scale_to_frequency",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@gsap/react": "^2.1.0",
-    "gsap": "^3.12.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
+    "@gsap/react": "^2.1.2",
+    "gh-pages": "^6.3.0",
+    "gsap": "^3.12.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
